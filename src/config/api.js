@@ -21,4 +21,8 @@ const define = env => {
 export default {
   environment: process.env.REACT_APP_STAGE,
   url: define(process.env.REACT_APP_STAGE),
+  search: {
+    base: '/search',
+    users: '/search/users'
+  }
 };
